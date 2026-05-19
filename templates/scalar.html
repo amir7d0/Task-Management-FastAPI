@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title>Scalar API Reference</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <!-- Local standalone.js -->
+    <script
+        src="/static/scalar/standalone.js"
+        type="module">
+    </script>
+
+    <!-- Initialize Scalar -->
+    <script type="module">
+        Scalar.createApiReference('#app', {
+            url: '/openapi.json',
+            persistAuth: true,
+        })
+    </script>
+</body>
+</html>
